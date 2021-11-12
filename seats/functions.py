@@ -35,7 +35,7 @@ def book_ticket(r,c):
     '''r is the number of rows \n c is the number of columns'''
     try:
         a_temp=int(input('Enter the Row: '))
-        if a_temp<r:
+        if a_temp<=r:
             ro=a_temp
         else:
             print('please enter a valid row')
@@ -46,7 +46,7 @@ def book_ticket(r,c):
 
     try:
         a_temp=int(input('Enter the Column: '))
-        if a_temp<c:
+        if a_temp<=c:
             co=a_temp
         else:
             print('please enter a valid column')
@@ -94,7 +94,7 @@ def info(row,column):
         print('Name: '+check.name)
         print('Gender: '+check.gender)
         print('Age: '+check.age)
-        print('Ticket Phone no. : '+check.phone)
+        print('Phone no. : '+check.phone)
         print('Ticket Price: '+str(check.price)+'\n \n')
 
     except:
